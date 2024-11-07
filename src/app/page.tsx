@@ -2,99 +2,88 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bg-gradient-to-b from-primary to-secondary flex flex-col justify-between items-center p-4 text-black">
+      <main className="">
+        <header>
+          <h1 className="text-4xl font-semibold mb-10">Saúde e Bem Estar</h1>
+        </header>
+        <div className="max-w-2xl mx-auto">
+          <section className="shadow-md shadow-inner flex justify-between items-center mb-8 bg-white flex-grow p-4 rounded">
+            <div className="flex-1 text-left">
+              <h2 className="text-2xl font-semibold mb-2">O que é Saúde e Bem-estar?</h2>
+              <p>
+                Saúde e bem-estar são fundamentais para a qualidade de vida. Eles envolvem não apenas a ausência de doenças, mas também o equilíbrio entre corpo, mente e emoções. Cuidar da saúde é investir em hábitos que promovem longevidade, disposição e felicidade.
+              </p>
+              <p>
+                O bem-estar é um estado de saúde física, mental e social, e não apenas a ausência de doenças. Estar saudável significa ter energia, sentir-se bem consigo mesmo e poder realizar suas atividades diárias com entusiasmo.
+              </p>
+              <p>
+                Praticar exercícios físicos regularmente, ter uma alimentação balanceada e manter um sono de qualidade são pilares essenciais para alcançar um bom estado de saúde.
+              </p>
+            </div>
+            <div className="flex-none ml-4">
+              <Image
+                className="dark"
+                src="/saude.png"
+                alt="Logo Saúde e Bem-estar"
+                width={180}
+                height={38}
+              />
+            </div>
+          </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <section className=" shadow-md shadow-inner flex justify-between items-center mb-8 bg-white flex-grow p-4 rounded">
+            <div className="flex-1 text-left">
+              <h2 className="text-2xl font-semibold mb-2">Benefícios de Priorizar a Saúde e Bem-estar</h2>
+              <ul className="list-disc list-inside mb-4">
+                <li>Aumento da energia e disposição diária.</li>
+                <li>Melhoria da saúde mental e emocional.</li>
+                <li>Prevenção de doenças e condições crônicas.</li>
+                <li>Redução do estresse e da ansiedade.</li>
+                <li>Fortalecimento do sistema imunológico.</li>
+              </ul>
+              <p>
+                Priorizar a saúde pode resultar em uma melhor qualidade de vida. Ao focar no bem-estar, as pessoas tendem a ser mais felizes, produtivas e resistentes a doenças.
+              </p>
+            </div>
+            <div className="flex-none ml-4">
+              <Image
+                className="dark"
+                src="/exercicio.png"
+                alt="Atividades Físicas"
+                width={180}
+                height={38}
+              />
+            </div>
+          </section>
+
+          <section className=" shadow-md shadow-inner flex justify-between items-center mb-8 bg-white flex-grow p-4 rounded">
+            <div className="flex-1 text-left">
+              <h2 className="text-2xl font-semibold mb-2">Dicas para Manter o Bem-estar</h2>
+              <p>
+                Para manter a saúde em dia e garantir o bem-estar, é importante adotar hábitos simples no dia a dia:
+              </p>
+              <ul className="list-disc list-inside">
+                <li><strong>Alimentação balanceada:</strong> Invista em uma dieta rica em nutrientes e evite alimentos processados.</li>
+                <li><strong>Exercícios físicos regulares:</strong> Pratique atividades que ajudem a manter o corpo em movimento, como caminhada, yoga ou musculação.</li>
+                <li><strong>Descanso adequado:</strong> Durma bem e tenha momentos de lazer para recarregar as energias.</li>
+                <li><strong>Cuide da saúde mental:</strong> Medite, pratique atividades relaxantes e mantenha relações sociais saudáveis.</li>
+              </ul>
+            </div>
+            <div className="flex-none ml-4">
+              <Image
+                className="dark"
+                src="/prancheta.png"
+                alt="Bem Estar"
+                width={180}
+                height={38}
+              />
+            </div>
+          </section>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      <footer className=""> {/* Classe de gradiente adicionada aqui */}
+        <p>Cuide de si e invista no seu bem-estar! Pequenas mudanças podem fazer uma grande diferença na sua saúde.</p>
       </footer>
     </div>
   );
